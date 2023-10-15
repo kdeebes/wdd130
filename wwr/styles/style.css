@@ -1,7 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
-
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -32,11 +29,11 @@ main section {
 }
 
 body {
-    background-color: white; 
+    background-color: white;
     font-size: 22px;
-    font-family: Open Sans, Roboto;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
-    margin: 0
+    margin: 0; 
 }
 
 header {
@@ -60,7 +57,7 @@ nav a:hover {
 }
 
 .card-img {
-    border: 10px soild #d9c2d9;
+    border: 10px solid rgb(236, 181, 229);
 }
 
 main section img {
@@ -75,7 +72,12 @@ main section img {
 #background {
     
     background-color: #d77eb0;
+    
+}
 
+#mountains {
+    margin: 0;
+    padding-top: 35px;
 }
 
 .msg {
