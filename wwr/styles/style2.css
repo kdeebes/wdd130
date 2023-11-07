@@ -1,15 +1,27 @@
 @import url('http://fonts.googleapis.com/css?family=Sofia');
 @import url('http://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 body {
     background-color: white;
-    font-family: 'Sofia', 'Acme', sans-serif, 'Lucida Sans';
+    font-family: 'Montserrat', 'Young Serif', 'Lucida Sans';
     font-size: 25px;  
+    padding: 0;
+    margin: 0;
 }
 
+
 header {
+    background-color:white;
     display: grid;
     grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 #content {
@@ -19,18 +31,18 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
+    color: white;
     justify-content: space-around;
     background-color: transparent;
 }
 
 nav a {
-    text-align: right;
-    text-decoration: none;
+    text-align: center;
     color: navy;
-    display: block;
-    padding: 15px;
+    text-decoration: none;
+    padding: 35px;
 }
+
 
 nav a:hover {
     color: black;
@@ -124,4 +136,50 @@ footer .social img {
 .icon {
     width: 80px;
     padding-top: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+
 }
