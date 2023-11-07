@@ -5,14 +5,14 @@
 body {
 
     background-color: white;
-    font-family: 'Montserrat', 'Young Serif';
+    font-family: 'Montserrat', 'Young Serif', 'Lucida Sans';
     font-size: 25px;  
     padding: 0;
     margin: 0;
 }
 
 header {
-    background-color:grey;
+    background-color:white;
     display: grid;
     grid-template-columns: 150px auto;
 }
@@ -35,7 +35,7 @@ nav {
   }
 nav a {
     text-align: center;
-    color: white;
+    color: navy;
     text-decoration: none;
     padding: 35px;
 }
@@ -68,7 +68,7 @@ nav a:hover {
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
-    color: rgb(232, 203, 179);
+    color: peachpuff;
     background-color: transparent;
 }
 
@@ -178,7 +178,7 @@ h4 {
 }
 
 footer {
-    background-color: grey;
+    background-color: white;
     color: peachpuff;
     padding: 25px 50px;
     margin-top: 25px; 
@@ -188,7 +188,7 @@ footer {
     flex-direction: column;
 }
 footer a {
-    background-color: grey;
+    background-color: white;
     color: peachpuff;
     text-decoration: none;
 }
