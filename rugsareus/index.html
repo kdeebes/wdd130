@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" type=text/css href="styles/style.css">
 </head>
 <body>
     <div id="content">
@@ -11,9 +12,11 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo1.jpg" alt="Dry Oar Logo" height="60" width="60">
             </a>
-            <nav>
+            <nav class="left-nav">
                 <a href="index.html">Home</a>
                 <a href="rugcollection.html">Rug Collection</a>
+            </nav>
+            <nav class="right-nav">
                 <a href="aboutus.html"> About Us</a>
             </nav>
         </header>
@@ -25,8 +28,10 @@
         </div>
     <main class="home-pg">
         <section class="welcome-message">
+        <div class="text-container">
             <h1>Welcome to Rugs Are Us, your one-stop destination for all your rug needs. Whether you're looking for stylish area rugs to add a pop of color to your living room, cozy shag rugs for your bedroom, or durable outdoor rugs to elevate your patio decor, we have a wide selection that caters to every style and budget. With our extensive collection, expert craftsmanship, and exceptional customer service, we strive to provide you with the perfect rug that will transform your space into a warm and inviting haven. Explore our website today and discover the perfect rug to enhance your home.</h2>
             <h2>As you explore our website, you'll find an intuitive and user-friendly platform designed to make your rug-shopping experience seamless and enjoyable. Browse through our categories, filter your preferences, and immerse yourself in the world of textures, colors, and styles. Each rug comes with detailed descriptions and high-resolution images to help you make an informed decision. We want you to feel confident that the rug you choose will not only meet but exceed your expectations.</h3>
+        </div>
         </section>
         <section class="home-pg-img">
             <img class="homepage-img" src="images/homepage2.jpg" alt="second homepage  welcome image ">
@@ -35,31 +40,33 @@
     </main>
     
         <footer>
-            <p><a href="ite-plan.html">Site Plan</a></p>
+            <div class="quick-links">
+                <p>Quick Links</p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="welcome.html">Welcome</a></p>
+                <p><a href="aboutus.html">About Us</a></p>
+                <p><a href="rugcollection.html">Rug Collection</a></p>
+    
+            </div>
+
+            <div class="social">
+                <div class="follow_us">Follow us</div>
+                <a href="https://facebook.com" target="_blank">
+                    <img class="icon" src="images/facebook.png" alt="fb icon" height="50" width="50">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon" height="50" width="50">
+                </a>
+            </div>
+            <div class="=copy">
+            <p>Rugs Are Us &copy;</p>
+            </div>
+
+            <div class="contact-us">
             <p><a href="contactus.html">Contact Us</a></p>
             <p>Rugs Are Us</p>
             <p>Mob: 02145348</p>
             <p>Email:rugsareus@rugsareus.com</p>
-
-        
-            <div class="quick-links">Quick Links
-                <a href="index.html">Home</a>
-                <a href="welcome.html">Welcome</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="rugcollection.html">Rug Collection</a>
-    
-            </div>
-        
-
-        <div class="social">
-            <div class="follow_us">Follow us
-            </div>
-            <a href="https://facebook.com" target="_blank">
-                <img class="icon" src="images/facebook.png" alt="fb icon" height="50" width="50">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon" height="50" width="50"></a>
-            <p>Rugs Are Us &copy;</p>
         </div>
 
         </footer>  
