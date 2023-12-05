@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     box-sizing: border-box;
     margin: 0;
@@ -14,35 +8,28 @@ body {
     min-height: 100vh;
 }
 
-
 header, footer {
     display: flex;
     padding: 30px 10%;
     background-color: #24252a;
 }
 
+header {
+    justify-content: space-between;
+    align-items: center;
+}
 
+main {
+    flex: 1;
+}
 
-
-
-
-
-
-li, a, button {
+header li, a, button {
 
     font-family: 'Arial', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
     text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252a;
 }
 
 .logo {
@@ -84,63 +71,40 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
-#welcome {
-    text-align: center;
-    padding: 20px;
+h1 {
+    font-size: 40px;
 }
 
-.welcome-title {
-    color: #333;
-}
-
-#welcome-box {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#welcome-img {
-    max-width: 100%;
-    height: auto;
- 
-}
-
-.welcome-message {
-  text-align: center;
-  margin-right: 20px;
-  font-size: 15px;
-
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
 
 
-.home-pg-img {
-    flex-grow: 1; 
+.title {
+    margin-bottom: 2rem;
 }
 
-.homepage-img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  
+.photo-gallery {
 
-.message {
-    text-align: justify;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 1rem auto;
-    padding: 1rem;
-    
+    display: flex;
+    gap: 20px;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.text-container {
+.photo img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+object-fit: cover;
 
-    text-align: justify;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 1rem auto;
-    padding: 1rem;
-   
 }
 
 footer {
@@ -157,6 +121,7 @@ footer ul li {
 #f-split {
     display: flex;
 }
+
 
 
 @media screen and (max-width: 900px) {
@@ -203,6 +168,7 @@ footer ul li {
     }
 
 }
+
 
 
 

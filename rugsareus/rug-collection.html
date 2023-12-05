@@ -1,122 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rug Collection</title>
-    <link rel="stylesheet" type=text/css href="styles/collection.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rug Collection</title>
+  <link type="text/css" rel="stylesheet" href="rug_collection.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
-    <div id="content">
-        <header>
-            <a id="logo_link" href="index.html"></a>
-                <img class="logo" src="images/logo1.jpg" alt="Dry Oar Logo" height="60" width="60">
-            </a>
-            <nav class="left-nav">
-                <a href="index.html">Home</a>
-                <a href="rug-collection.html">Rug Collection</a>
-            </nav>
-            <nav class="right-nav">
-                <a href="aboutus.html"> About Us</a>
-            </nav>
-        </header>
-        <section id="rug-collection">
-            <h1 class="welcome-title">Rug Collection</h1>
-        </section> 
-        <main class="kids-collection">
-            <section class="kids-imgs">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                      <div class="flip-box-front">
-                        <img class="collection-img2" src="images/kidsc2.jpg" alt="first collection image2 ">
-                      </div>
-                      <div class="flip-box-back">
-                        <h2>Kids</h2>
-                        <img class="collection-img2" src="images/kidsc2.jpg" alt="first collection image2 ">
-                      </div>
-                    </div>
-                  </div>
 
+  <header>
+    <img class="logo" src="images/logo1.jpg" alt="logo" height="60" width="60">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rug-collection.html">Rug Collection</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact</button></a>
+  </header>
 
-                  <section class="modern-collection">
-                    <div class="flip-box2">
-                        <div class="flip-box2-inner">
-                          <div class="flip-box2-front">
-                            <img class="collection-img3" src="images/shagc1.jpg" alt="second collection image1">
-                          </div>
-                          <div class="flip-box2-back">
-                            <h2>Modern</h2>
-                            <img class="collection-img4" src="images/shagc2.jpg" alt="second collection image2">
-                          </div>
-                        </div>
-                      </div>
+  <main>
+    <div class="container">
+      <h1 class="title">Collection</h1>
 
+      <div class="photo-gallery">
 
+        <div class="column">
+          <div class="photo">
+            <img src="images/rsz_2image.jpg" alt="Kids Collection"> 
+            <p> Kids Collection</p>
+          </div>
+        </div>    
 
-                    <section class="shag-collection">
-                        <div class="flip-box3">
-                            <div class="flip-box3-inner">
-                              <div class="flip-box3-front">
-                                <img clas="collection-img5" src="images/trc1.jpg" altc="third collection image 1">
-                              </div>
-                              <div class="flip-box2-back">
-                                <h2>Shag</h2>
-                                <img class="collection-img6" src="images/trc2.jpg" altc="third collection image2">
-                              </div>
-                            </div>
-                        </div>
-
-
-                    <section class="traditional-collection">
-                            <div class="flip-bo43">
-                                <div class="flip-box4-inner">
-                                  <div class="flip-box4-front">
-                                    <img class="collection-img7" src="images/modern1.jpg" altc="fourth collection image1">
-                                  </div>
-                                  <div class="flip-box4-back">
-                                    <h2>Traditional</h2>
-                                    <img class="collection-img8" src="images/modern2.jpg" altc="fourth collection image2">
-                                  </div>
-                                </div>
-                        </div>
-                
-            </section>
-            
-
-        </main>
-    
-        <footer>
-            <div class="quick-links">
-                <p>Quick Links</p>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="welcome.html">Welcome</a></p>
-                <p><a href="aboutus.html">About Us</a></p>
-                <p><a href="rug-collection.html">Rug Collection</a></p>
-    
-            </div>
-
-            <div class="social">
-                <div class="follow_us">Follow us</div>
-                <a href="https://facebook.com" target="_blank">
-                    <img class="icon" src="images/facebook.png" alt="fb icon" height="50" width="50">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon" height="50" width="50">
-                </a>
-            </div>
-            <div class="=copy">
-            <p>Rugs Are Us &copy;</p>
-            </div>
-
-            <div class="contact-us">
-            <p><a href="contactus.html">Contact Us</a></p>
-            <p>Rugs Are Us</p>
-            <p>Mob: 02145348</p>
-            <p>Email:rugsareus@rugsareus.com</p>
+        <div class="column">
+          <div class="photo">
+            <img src="images/shagc3.jpg" alt="Shag Collection">
+            <p> Shag Collection</p>
+          </div>
         </div>
 
-        </footer>  
+        <div class="column">
+          <div class="photo">
+            <img src="images/trc1.jpg" alt="Traditional Collection"> 
+            <p> Traditional Collection</p>
+          </div>
+        </div>
 
-</div>
+        <div class="column">
+          <div class="photo">
+            <img src="images/rsz_1modern1.jpg" alt="Modern Collection"> 
+            <p> Modern Collection</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footersocials">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div id="f-split">
+      <div class="footerNav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Welcome</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Rug</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Rugs Are Us</a></li>
+          <li><a href="#">Mob. 0214534B</a></li>
+          <li><a href="#">Email: info@rugsareus.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>Copyright &copy;2023 | Rugsareus | Designed by <span class="designer">Kerryann Deebes</span></p>
+    </div>
+  </footer>
 </body>
 </html>

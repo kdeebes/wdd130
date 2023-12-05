@@ -1,325 +1,136 @@
-@import url('http://fonts.googleapis.com/css?family=Sofia');
-@import url('http://fonts.googleapis.com/css?family=Acme');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-body, h1, h2, h3, p, ul, li {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Montserrat', 'Arial';
-    line-height: 1.6;
+li, a, button {
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
 }
 
-#logo_link {
-    text-decoration: none;
-    color: #fff;
+.logo {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: auto;
+}   
+
+.nav_links {
+    list-style: none;
+   
 }
 
-.left-nav, .right-nav {
-    display: flex; 
+.nav_links li {
+
+    display: inline-block;
+    padding: 0px 20px;
 }
 
-
-.left-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 15px;
-    transition: color 0.3s; 
+.nav_links li a {
+    transition: all 0.3s ease 0s;
 }
 
-.right-nav a {  
-    text-decoration: none;
-    color: #fff;
-    margin-left: 15px;
-    transition: color 0.3s;
+.nav_links li a:hover {
+    color: #ACC8E5;
 }
 
-.left-nav a:hover,
-.right-nav a:hover {
-    background-color: #ACC8E5;
-    color: #112A46;
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
-.flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+button:hover {
+    background-color: rgba(0,136,169,0.8);
 }
 
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+h1 {
+    font-size: 40px;
 }
 
 
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
 
 
-
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
+.title {
+    margin-bottom: 2rem;
 }
 
+.photo-gallery {
 
- /* Style the back side */
-.flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-
-.flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    margin-bottom: 20px;
-    float: left;
-    margin-right: 20px;
-  }
-  
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front,
-  .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  
-  /* Additional styles for the images */
-  .collection-img2,
-  .collection-img3,
-  .collection-img4,
-  .collection-img5,
-  .collection-img6,
-  .collection-img7,
-  .collection-img8 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: #333;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    clear: both;
+    gap: 20px;
 }
 
-footer p {
-    margin-bottom: 10px;
-}
-
-.quick-links a {
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.quick-links {
+.column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-    
+    gap: 20px;
 }
 
-.social {
+.photo img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+object-fit: cover;
+
+}
+
+
+
+.footer {
+
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+
+
+.socialIcons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-.copy {
-    display: flex;
-    
-}
-
-.icon {
-    margin: 0 10px;
+    justify-content: center;
 }
 
 
-.contact-us {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
+
+.footernav {
+    margin: 30px 0;
 }
 
 
-.contact-us a {
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px;
-}
+@media(max-width: 768px){
 
-.social-images {
-    margin-top: 20px;
-}
-
-
-.social-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
-.rugs-are-us-copy {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
+    .photo-gallery {
         flex-direction: column;
     }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 25px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-
 }
-
-
-
-
-
-
