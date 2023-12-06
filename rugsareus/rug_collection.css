@@ -80,6 +80,22 @@ h1 {
     width: 90%;
     margin: auto;
     padding: 40px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container p{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 

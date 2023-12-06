@@ -21,13 +21,6 @@ header, footer {
     background-color: #24252a;
 }
 
-
-
-
-
-
-
-
 li, a, button {
 
     font-family: 'Arial', sans-serif;
@@ -87,6 +80,18 @@ button:hover {
 #welcome {
     text-align: center;
     padding: 20px;
+    max-width: 1224px;
+    margin: auto;
+    padding: 40px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #424144;
+
+
+
 }
 
 .welcome-title {
@@ -112,8 +117,10 @@ button:hover {
 }
 
 
-.home-pg-img {
+.bottom img {
     flex-grow: 1; 
+     padding: 20px;
+    
 }
 
 .homepage-img {
