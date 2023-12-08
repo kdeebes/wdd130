@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    padding: 30px 10%;
+    background-color: #24252a;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+}
+
+header li, a, button {
+
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: auto;
+}   
+
+.nav_links {
+    list-style: none;
+   
+}
+
+.nav_links li {
+
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ACC8E5;
+}
+
+a.cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #027c94;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+button:hover {
+    background-color: #027c94;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.photo-gallery {
+
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+object-fit: cover;
+
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #24252a;
+}
+
+footer ul li {
+    text-decoration: none;
+}
+
+#f-split {
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+
+}
+
+
+
+
+
+
+
