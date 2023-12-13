@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
 header, footer {
@@ -20,12 +21,19 @@ header {
 }
 
 main {
-    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+h2 {
+    color: #333;
+  }
+
+ 
 
 header li, a, button {
 
-    font-family: 'Arial', sans-serif;
+    
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -68,7 +76,22 @@ a.cta {
 }
 
 
+p {
 
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    
+    line-height: 1.5;
+    text-align: left;
+    
+}
+
+
+
+.mission-heading, .quality-heading, .selection-heading, .expertise-heading, .guarantee-heading {
+    color: #008080;
+    font-weight: bold;
+  }
 
 
 button:hover {
@@ -76,8 +99,12 @@ button:hover {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
 }
+
+
 
 .container {
     max-width: 1224px;
@@ -101,28 +128,6 @@ h1 {
     font-size: 20px;
     margin-top: 20px;
 }
-
-.aboutus-pg {
-
-    text-align: center;
-  margin-right: 20px;
-  font-size: 15px;
-}
-
-.photo {
-   padding: 0;
-   margin: auto;
-   width: 50%;
-    height: 50%;
-    border-radius: 5px;
-    object-fit: cover;
-    padding: 0;
-}
-
-h2 {
-    font-size: 40px;
-}
-
 
 .title {
     margin-bottom: 2rem;
