@@ -166,6 +166,7 @@ footer ul li {
 }
 
 
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -210,9 +211,3 @@ footer ul li {
     }
 
 }
-
-
-
-
-
-
